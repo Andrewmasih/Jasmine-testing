@@ -13,7 +13,9 @@
         <!-- secoundly, load scripts here, i have writen a small JavaScript-based calculator and run some tests against that.(Let's load our calc.js file from our scripts directory.)-->
         <script type="text/javascript" src="scripts/calc.js"> </script>
 
-        <!--load tests here, Then we're going to load our calcSpec.js file from our spec directory. Now again, the order is important. We need to load our source code, our calc.js, before we load the specifications-->    
+        <!--load tests here, Then we're going to load our calcSpec.js file from our spec directory. Now again, the order is important. We need to load our source code, our calc.js, before we load the specifications,
+        The reason for this is that any functions or objects that we define within the calc.js file will be referenceable inside our calcSpec.js file.
+        So that's the reasoning behind loading our source code before we load our tests.-->    
         <script type="text/javascript" src="spec/calcSpec.js"></script>        
 
     </head>
