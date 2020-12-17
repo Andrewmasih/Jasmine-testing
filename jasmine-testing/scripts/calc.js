@@ -3,7 +3,7 @@ function addition(numOne, numTwo) {
         "number") {
         return numOne + numTwo;
     } else {
-        return "error!";
+        alert("Error!");
     }    
 
 }
