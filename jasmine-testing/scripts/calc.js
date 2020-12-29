@@ -1,5 +1,4 @@
-  
-Calculator = function() {
+  Calculator = function() {
     this.value = 0;
 };
 
